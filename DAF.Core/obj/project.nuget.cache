@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Rps2metSOaWZyDS/275gl7bCibipa0b0jspp09OR/ldSiofL/P72HFyFwfsDrh6UKlzPh+PVNQ7hqpQGDWMuPw==",
+  "success": true,
+  "projectFilePath": "D:\\Flight_OpenSky_Assesment\\DAF.Core\\DAF.Assesment.Flights.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Argha Guha Biswas\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

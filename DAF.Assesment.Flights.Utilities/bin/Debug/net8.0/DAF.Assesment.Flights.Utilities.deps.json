@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DAF.Assesment.Flights.Utilities/1.0.0": {
+        "runtime": {
+          "DAF.Assesment.Flights.Utilities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DAF.Assesment.Flights.Utilities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

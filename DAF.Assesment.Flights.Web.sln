@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAF.Assesment.Flights.Web", "DAF.Assesment.Flights.Web\DAF.Assesment.Flights.Web\DAF.Assesment.Flights.Web.csproj", "{444F5801-9CCB-420B-A398-3F829E2BA573}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAF.Assesment.Flights.Core", "DAF.Core\DAF.Assesment.Flights.Core.csproj", "{C9248405-5E95-44E9-B9BF-7102CB1BFB7B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAF.Assesment.Flights.Application", "DAF.Assesment.Flights.Application\DAF.Assesment.Flights.Application.csproj", "{587CEB3B-3AC8-43D9-BE52-F9F13CB88F63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAF.Assesment.Flights.Infrastructure", "DAF.Assesment.Flights.Infrastructure\DAF.Assesment.Flights.Infrastructure.csproj", "{7704DD52-C1D6-41E1-AEC1-7C44FF9545CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAF.Assesment.Flights.BackgroundWorker", "DAF.Assesment.Flights.BackgroundWorker\DAF.Assesment.Flights.BackgroundWorker.csproj", "{CB13497C-6353-4863-B334-AE4D3D7D48EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAF.Assesment.Flights.Utilities", "DAF.Assesment.Flights.Utilities\DAF.Assesment.Flights.Utilities.csproj", "{FD165B07-1959-4440-8298-CA616AE161D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{63A4E6DB-516F-408C-A01F-A019DD17CDD7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAF.Assesment.Flights.Core.Tests", "DAF.Assesment.Flights.Core.Tests\DAF.Assesment.Flights.Core.Tests.csproj", "{7B6DDFCA-E0D7-4D2C-B17B-43A0F8566841}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{CE3F63F4-D7AD-47CC-A65D-032D68F3FBBC}"
+	ProjectSection(SolutionItems) = preProject
+		DAF.Database\Airports_Data.sql = DAF.Database\Airports_Data.sql
+		DAF.Database\DAF_Assesment.bak = DAF.Database\DAF_Assesment.bak
+		DAF.Database\DAF_Assesment.sql = DAF.Database\DAF_Assesment.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{444F5801-9CCB-420B-A398-3F829E2BA573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{444F5801-9CCB-420B-A398-3F829E2BA573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{444F5801-9CCB-420B-A398-3F829E2BA573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{444F5801-9CCB-420B-A398-3F829E2BA573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9248405-5E95-44E9-B9BF-7102CB1BFB7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9248405-5E95-44E9-B9BF-7102CB1BFB7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9248405-5E95-44E9-B9BF-7102CB1BFB7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9248405-5E95-44E9-B9BF-7102CB1BFB7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{587CEB3B-3AC8-43D9-BE52-F9F13CB88F63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{587CEB3B-3AC8-43D9-BE52-F9F13CB88F63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{587CEB3B-3AC8-43D9-BE52-F9F13CB88F63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{587CEB3B-3AC8-43D9-BE52-F9F13CB88F63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7704DD52-C1D6-41E1-AEC1-7C44FF9545CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7704DD52-C1D6-41E1-AEC1-7C44FF9545CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7704DD52-C1D6-41E1-AEC1-7C44FF9545CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7704DD52-C1D6-41E1-AEC1-7C44FF9545CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB13497C-6353-4863-B334-AE4D3D7D48EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB13497C-6353-4863-B334-AE4D3D7D48EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB13497C-6353-4863-B334-AE4D3D7D48EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB13497C-6353-4863-B334-AE4D3D7D48EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD165B07-1959-4440-8298-CA616AE161D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD165B07-1959-4440-8298-CA616AE161D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD165B07-1959-4440-8298-CA616AE161D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD165B07-1959-4440-8298-CA616AE161D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B6DDFCA-E0D7-4D2C-B17B-43A0F8566841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B6DDFCA-E0D7-4D2C-B17B-43A0F8566841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B6DDFCA-E0D7-4D2C-B17B-43A0F8566841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B6DDFCA-E0D7-4D2C-B17B-43A0F8566841}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7B6DDFCA-E0D7-4D2C-B17B-43A0F8566841} = {63A4E6DB-516F-408C-A01F-A019DD17CDD7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA22E096-9751-49F2-9BD3-3D2B9AB4D34F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+D:\Flight_OpenSky_Assesment\DAF.Assesment.Flights.Utilities\bin\Debug\net8.0\DAF.Assesment.Flights.Utilities.deps.json
+D:\Flight_OpenSky_Assesment\DAF.Assesment.Flights.Utilities\bin\Debug\net8.0\DAF.Assesment.Flights.Utilities.dll
+D:\Flight_OpenSky_Assesment\DAF.Assesment.Flights.Utilities\bin\Debug\net8.0\DAF.Assesment.Flights.Utilities.pdb
+D:\Flight_OpenSky_Assesment\DAF.Assesment.Flights.Utilities\obj\Debug\net8.0\DAF.Assesment.Flights.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Flight_OpenSky_Assesment\DAF.Assesment.Flights.Utilities\obj\Debug\net8.0\DAF.Assesment.Flights.Utilities.AssemblyInfoInputs.cache
+D:\Flight_OpenSky_Assesment\DAF.Assesment.Flights.Utilities\obj\Debug\net8.0\DAF.Assesment.Flights.Utilities.AssemblyInfo.cs
+D:\Flight_OpenSky_Assesment\DAF.Assesment.Flights.Utilities\obj\Debug\net8.0\DAF.Assesment.Flights.Utilities.csproj.CoreCompileInputs.cache
+D:\Flight_OpenSky_Assesment\DAF.Assesment.Flights.Utilities\obj\Debug\net8.0\DAF.Assesment.Flights.Utilities.sourcelink.json
+D:\Flight_OpenSky_Assesment\DAF.Assesment.Flights.Utilities\obj\Debug\net8.0\DAF.Assesment.Flights.Utilities.dll
+D:\Flight_OpenSky_Assesment\DAF.Assesment.Flights.Utilities\obj\Debug\net8.0\refint\DAF.Assesment.Flights.Utilities.dll
+D:\Flight_OpenSky_Assesment\DAF.Assesment.Flights.Utilities\obj\Debug\net8.0\DAF.Assesment.Flights.Utilities.pdb
+D:\Flight_OpenSky_Assesment\DAF.Assesment.Flights.Utilities\obj\Debug\net8.0\ref\DAF.Assesment.Flights.Utilities.dll

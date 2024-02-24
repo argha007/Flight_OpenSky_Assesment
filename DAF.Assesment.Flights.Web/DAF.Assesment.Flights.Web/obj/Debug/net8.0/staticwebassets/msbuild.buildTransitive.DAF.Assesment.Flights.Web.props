@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\DAF.Assesment.Flights.Web.props" />
+</Project>

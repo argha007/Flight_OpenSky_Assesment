@@ -1,0 +1,73 @@
+﻿@page "/"
+@inject IFlightService flightService
+@inject Blazorise.IModalService ModalService
+@using Blazorise
+@inject IJSRuntime JSRuntime
+
+<Div>
+    <ModalForm @ref="myModalRef" />
+    <Blazorise.Button Color="Color.Primary" Clicked="@OpenPopup">Subscribe for Flight Arrival</Blazorise.Button>
+</Div>
+
+<Div Style="padding:20px 0 0 0;">
+    <DataGrid TItem="Flight"
+              Data="@flights"
+              Class="table table-hover table-bordered table-striped"
+              @bind-SelectedRow="@selectedFlight"
+              Responsive
+              Sortable="true"
+              ShowPager="true"
+              Filterable="true"
+              PageSize="25"
+              SortMode="DataGridSortMode.Multiple">
+        <DataGridColumns>
+            <DataGridColumn TItem="Flight" Field="@(nameof(Flight.AirportName))" Caption="Airport" />
+            <DataGridColumn TItem="Flight" Field="@(nameof(Flight.FlightName))" Caption="Flight Name"  />
+            <DataGridColumn TItem="Flight" Field="@(nameof(Flight.EstDepartureAirport))" Caption="Departure Airport" Filterable="false" />
+            <DataGridColumn TItem="Flight" Field="@(nameof(Flight.EstArrivalAirport))" Caption="Arrival Airport" Filterable="false" />
+            <DataGridColumn TItem="Flight" Field="@(nameof(Flight.FirstSeen))" Caption="Departure Time" />
+            <DataGridColumn TItem="Flight" Field="@(nameof(Flight.LastSeen))" Caption="Arrival Time" />
+        </DataGridColumns>
+    </DataGrid>
+</Div>
+
+@code {
+    private List<Flight>? flights;
+    private Flight? selectedFlight;
+    private ModalForm? myModalRef; 
+
+    protected override async Task OnInitializedAsync()
+    {
+        flights = flightService.GetAllFlights();
+        await base.OnInitializedAsync();        
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Reload the page using JavaScript every 15 minutes
+            await ReloadPageAfterInterval();
+        }
+    }
+    private void HandleModalClosed()
+    {
+        Console.WriteLine("Modal form closed call back check");
+    }
+    private void OpenPopup()
+    {
+        myModalRef?.ShowModal();
+    }
+    /// <summary>
+    /// ReloadPageAfterInterval
+    /// </summary>
+    /// <returns></returns>
+    private async Task ReloadPageAfterInterval()
+    {
+        int intervalMilliseconds = 15 * 60 * 1000; //15 minutes
+        var reloadPageFunction = @"function() {
+            location.reload();
+        }";
+        await JSRuntime.InvokeVoidAsync("setInterval", reloadPageFunction, intervalMilliseconds);
+    }
+}

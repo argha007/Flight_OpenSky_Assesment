@@ -1,0 +1,81 @@
+﻿@using DAF.Assesment.Flights.Application.Users
+@using DAF.Assesment.Flights.Application.Users.ViewModel
+@using System.ComponentModel.DataAnnotations
+@inject UserEmailService userEmailService
+
+<EditForm Model="@userEmailViewModel" OnValidSubmit="@SaveInformation">
+    <Blazorise.Modal @ref="modal" Size="ModalSize.Small" Class="bgModal" HideOnClickOutside="false">
+        <Blazorise.ModalHeader>
+            Notification form
+        </Blazorise.ModalHeader>
+        <Blazorise.ModalBody>
+            @if (!showMessage)
+            {
+                <Field>
+                    <FieldLabel>Flight Number</FieldLabel>
+                    <TextEdit @bind-Text="userEmailViewModel.FlightName" Placeholder="Enter flight number..." />
+                    <ValidationMessage For="@(() => userEmailViewModel.FlightName)" TValue="string" />
+                </Field>
+                <Field>
+                    <FieldLabel>Email</FieldLabel>
+                    <TextEdit @bind-Text="userEmailViewModel.Email" Placeholder="Enter email..." />
+                    <ValidationMessage For="@(() => userEmailViewModel.Email)" TValue="string" />
+                </Field>
+                <Field>
+                    <FieldLabel>Date</FieldLabel>
+                    <DatePicker TValue="DateTime?" @bind-Value="selectedDateTime" Format="yyyy-MM-dd HH:mm" TimeAs24hr />
+                </Field>
+                <Field>
+                    <FieldLabel>Time</FieldLabel>
+                    <TimePicker TValue="DateTime?" @bind-Value="selectedTime" />
+                </Field>
+            }
+            else
+            {
+                <div class="mb-3">
+                    <Label>@messageDisplayText</Label>
+                </div>
+            }
+        </Blazorise.ModalBody>
+        <Blazorise.ModalFooter>
+            <Blazorise.Button Color="Color.Secondary" Clicked="@CloseModal">Close</Blazorise.Button>
+            <Blazorise.Button Color="Color.Primary" Type="ButtonType.Submit">Notify</Blazorise.Button>
+        </Blazorise.ModalFooter>
+    </Blazorise.Modal>
+</EditForm>
+
+@code {
+    private Blazorise.Modal? modal;
+    private DateTime? selectedDateTime;
+    private TimeSpan? selectedTime;
+    private UserEmailViewModel userEmailViewModel = new UserEmailViewModel();
+    private bool showMessage;
+    private string? messageDisplayText;
+
+    public void ShowModal()
+    {
+        showMessage = false;
+        messageDisplayText = "Thanks! We shall notify you as soon as we have the info";
+        modal?.Show();
+    }
+
+    private void CloseModal()
+    {
+        showMessage = false;
+        modal?.Hide();
+    }
+
+    private void SaveInformation()
+    {
+        try
+        {
+            userEmailService.SaveUserInformation(userEmailViewModel);
+            ShowModal(); // Show modal after successfully saving information
+        }
+        catch
+        {
+            messageDisplayText = "We are having some issues, please try again later. Thanks!";
+            showMessage = true;
+        }
+    }
+}

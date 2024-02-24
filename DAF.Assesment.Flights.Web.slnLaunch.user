@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Name": "DAF.Assesment.Flights.Web\\DAF.Assesment.Flights.Web\\DAF.Assesment.Flights.Web.csproj",
+        "Action": "Start",
+        "DebugTarget": ""
+      },
+      {
+        "Name": "DAF.Assesment.Flights.BackgroundWorker\\DAF.Assesment.Flights.BackgroundWorker.csproj",
+        "Action": "Start",
+        "DebugTarget": ""
+      }
+    ]
+  }
+]

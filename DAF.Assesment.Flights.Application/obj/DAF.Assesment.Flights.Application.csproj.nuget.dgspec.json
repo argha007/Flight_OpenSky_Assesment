@@ -1,0 +1,315 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Flight_OpenSky_Assesment\\DAF.Assesment.Flights.Application\\DAF.Assesment.Flights.Application.csproj": {}
+  },
+  "projects": {
+    "D:\\Flight_OpenSky_Assesment\\DAF.Assesment.Flights.Application\\DAF.Assesment.Flights.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Flight_OpenSky_Assesment\\DAF.Assesment.Flights.Application\\DAF.Assesment.Flights.Application.csproj",
+        "projectName": "DAF.Assesment.Flights.Application",
+        "projectPath": "D:\\Flight_OpenSky_Assesment\\DAF.Assesment.Flights.Application\\DAF.Assesment.Flights.Application.csproj",
+        "packagesPath": "C:\\Users\\Argha Guha Biswas\\.nuget\\packages\\",
+        "outputPath": "D:\\Flight_OpenSky_Assesment\\DAF.Assesment.Flights.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Argha Guha Biswas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Flight_OpenSky_Assesment\\DAF.Assesment.Flights.Infrastructure\\DAF.Assesment.Flights.Infrastructure.csproj": {
+                "projectPath": "D:\\Flight_OpenSky_Assesment\\DAF.Assesment.Flights.Infrastructure\\DAF.Assesment.Flights.Infrastructure.csproj"
+              },
+              "D:\\Flight_OpenSky_Assesment\\DAF.Core\\DAF.Assesment.Flights.Core.csproj": {
+                "projectPath": "D:\\Flight_OpenSky_Assesment\\DAF.Core\\DAF.Assesment.Flights.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Flight_OpenSky_Assesment\\DAF.Assesment.Flights.Infrastructure\\DAF.Assesment.Flights.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Flight_OpenSky_Assesment\\DAF.Assesment.Flights.Infrastructure\\DAF.Assesment.Flights.Infrastructure.csproj",
+        "projectName": "DAF.Assesment.Flights.Infrastructure",
+        "projectPath": "D:\\Flight_OpenSky_Assesment\\DAF.Assesment.Flights.Infrastructure\\DAF.Assesment.Flights.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Argha Guha Biswas\\.nuget\\packages\\",
+        "outputPath": "D:\\Flight_OpenSky_Assesment\\DAF.Assesment.Flights.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Argha Guha Biswas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Flight_OpenSky_Assesment\\DAF.Core\\DAF.Assesment.Flights.Core.csproj": {
+                "projectPath": "D:\\Flight_OpenSky_Assesment\\DAF.Core\\DAF.Assesment.Flights.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Flight_OpenSky_Assesment\\DAF.Assesment.Flights.Utilities\\DAF.Assesment.Flights.Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Flight_OpenSky_Assesment\\DAF.Assesment.Flights.Utilities\\DAF.Assesment.Flights.Utilities.csproj",
+        "projectName": "DAF.Assesment.Flights.Utilities",
+        "projectPath": "D:\\Flight_OpenSky_Assesment\\DAF.Assesment.Flights.Utilities\\DAF.Assesment.Flights.Utilities.csproj",
+        "packagesPath": "C:\\Users\\Argha Guha Biswas\\.nuget\\packages\\",
+        "outputPath": "D:\\Flight_OpenSky_Assesment\\DAF.Assesment.Flights.Utilities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Argha Guha Biswas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Flight_OpenSky_Assesment\\DAF.Core\\DAF.Assesment.Flights.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Flight_OpenSky_Assesment\\DAF.Core\\DAF.Assesment.Flights.Core.csproj",
+        "projectName": "DAF.Assesment.Flights.Core",
+        "projectPath": "D:\\Flight_OpenSky_Assesment\\DAF.Core\\DAF.Assesment.Flights.Core.csproj",
+        "packagesPath": "C:\\Users\\Argha Guha Biswas\\.nuget\\packages\\",
+        "outputPath": "D:\\Flight_OpenSky_Assesment\\DAF.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Argha Guha Biswas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Flight_OpenSky_Assesment\\DAF.Assesment.Flights.Utilities\\DAF.Assesment.Flights.Utilities.csproj": {
+                "projectPath": "D:\\Flight_OpenSky_Assesment\\DAF.Assesment.Flights.Utilities\\DAF.Assesment.Flights.Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
